@@ -1,10 +1,10 @@
 Status
 ------
-. Open
-. Started
-. Finished
-. Delivered
-. Accepted
-. Not accepted
-. Abandoned
-. Deployed
+- Open
+- Started
+- Finished
+- Delivered
+- Accepted
+- Not accepted
+- Abandoned
+- Deployed
