@@ -1,4 +1,4 @@
 venator
 =======
 
-Customer request tracking system.
+Venator is a web-based customer demand's tracking system.
