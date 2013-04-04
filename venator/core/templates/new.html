@@ -1,0 +1,47 @@
+{% extends 'site.html' %}
+{% block body %}
+<h1>New ticket</h1>
+<p>User: Guilherme</p>
+<p>Customer: AC</p>
+<form action="">
+  <div class="row">
+    <div class="span6">
+      <label for="">Title</label>
+      <input type="text" class="input-block-level">
+    </div>
+  </div>
+  <div class="row">
+    <div class="span6">
+      <label for="">Priority</label>
+      <select name="" id="">
+        {% for i in 'asdf' %}
+        <option value="">{{ i }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span6">
+      <label for="">Project</label>
+      <select name="" id=""></select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span9">
+      <label for="">Description</label>
+      <textarea class="input-block-level" name="" id="" cols="30" rows="5"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span12">
+      <label for="">Files</label>
+      <input type="file" name="" multiple id="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="span6">
+      <button class="btn btn-primary">Save</button>
+    </div>
+  </div>
+</form>
+{% endblock %}
