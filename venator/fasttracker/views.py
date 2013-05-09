@@ -8,6 +8,12 @@ from venator.fasttracker.models import Bug
 
 
 class Index(ListView):
+    # def get(self, request):
+    #     if "order" in request.GET:
+    #     return super(Index, self).get(request)
+
+    queryset = Bug.objects.exclude(status="DE")
+
     model = Bug
     template_name = "fasttracker/index.html"
 
