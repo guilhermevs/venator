@@ -1,0 +1,12 @@
+{% extends 'fasttracker/base.html' %}
+
+{% block body %}
+<div class="row">
+  <h2>{{ object.title }}</h2>
+  <p>Status: {{ object.get_status_display }}</p>
+  <p>Creator: {{ object.creator }}</p>
+  <p>Created at: {{ object.created_at }}</p>
+  <h3>Description:</h3>
+  {{ object.description|linebreaks }}
+</div>
+{% endblock %}

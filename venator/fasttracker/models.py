@@ -13,3 +13,6 @@ class Bug(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     creator = models.CharField(max_length=30)
     status = models.CharField(max_length=2, choices=STATUS)
+
+    def get_absolute_url(self):
+        return '/fasttracker/'

@@ -1,0 +1,12 @@
+{% extends 'fasttracker/base.html' %}
+
+{% block body %}
+  <div class="row">
+    <form action="" method="POST">
+      {% csrf_token %}
+      {{ form }}
+      <div class="clear-fix"></div>
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+  </div>
+{% endblock %}

@@ -1,11 +1,20 @@
 # coding: utf-8
 
-from django.views.generic import TemplateView
+from django.views.generic.list import ListView
+from django.views.generic.edit import CreateView
+from django.views.generic.detail import DetailView
+
+from venator.fasttracker.models import Bug
 
 
-class Index(TemplateView):
+class Index(ListView):
+    model = Bug
     template_name = "fasttracker/index.html"
 
 
-class NewBug(TemplateView):
-    template_name = "fasttracker/newbug.html"
+class NewBug(CreateView):
+    model = Bug
+
+
+class BugDetail(DetailView):
+    model = Bug

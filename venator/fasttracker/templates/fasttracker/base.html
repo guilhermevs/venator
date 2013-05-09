@@ -13,14 +13,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="/">FastTracker</a>
+          <a class="brand" href="{% url 'fasttracker:index' %}">FastTracker</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
-                <a href="/demand/new">New bug</a>
-              </li>
-              <li class="">
-                <a href="">Reports</a>
+                <a href="{% url 'fasttracker:newbug' %}">New bug</a>
               </li>
             </ul>
           </div>
