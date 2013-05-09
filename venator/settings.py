@@ -126,6 +126,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'south',
     'venator.core',
+    'venator.fasttracker',
 )
 
 # A sample logging configuration. The only tangible logging
