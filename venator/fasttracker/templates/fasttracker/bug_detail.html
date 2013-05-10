@@ -8,5 +8,9 @@
   <p>Created at: {{ object.created_at }}</p>
   <h3>Description:</h3>
   {{ object.description|linebreaks }}
+  {% if object.attachment %}
+  <h3>Attachment:</h3>
+  <a href="{{ object.attachment.url }}">{{ object.attachment }}</a>
+  {% endif %}
 </div>
 {% endblock %}
